@@ -7,3 +7,5 @@ The Turing Machine will be programmable and runnable in real time,
 and the tape will be animated as it runs
 
 TM syntax: To be decided
+
+Roles:
