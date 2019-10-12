@@ -1,4 +1,4 @@
-Browser TM™
+Browser TM™<sup>™</sup>
 
 It's a toy implementation of a Turing Machine.. in a web browser, vanilla HTML, CSS, and JS
 This makes it runnable offline with no extra work.
