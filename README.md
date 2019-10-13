@@ -1,11 +1,12 @@
 Browser TM™<sup>™</sup><sup><sup>™</sup></sup>
+Note: not actually trademarked
 
 It's a toy implementation of a Turing Machine.. in a web browser, vanilla HTML, CSS, and JS
-This makes it runnable offline with no extra work.
-All the fun without the bloat :)
+This adds portability, it can be downloaded and run offline, and it's bare-bones, no bloat.
 
-The Turing Machine will be programmable and runnable in real time,
-and the tape will is animated as it runs
+On a technical level, it's more aptly called a Universal Turing Machine, as described by Alan Turing. It takes an encoding of a Turing Machine (a "program" in our TM language) and an initial tape as input, and runs that Turing Machine with the tape given as input. 
+
+As of now, it's a working implementation, but it could be improved upon by writing a proper TM language compiler, tools to create a compiler for a custom TM language, ability to import and export programs, better control over TMs that have gone rogue, performance optimizations, and more.
 
 # TM Syntax
 
