@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>hundred</title>
+	<link rel='stylesheet' href="h.css">
+</head>
+<body>
+	<div class="header">
+		<h1 class="title">Is this human resource machine?</h1>
+		<h4>State</h4>
+	</div>
+	<div class="tape">
+	  <div class="tape-cell"></div>
+	  <div class="tape-cell"></div>
+	  <div class="tape-cell"></div>
+	  <div class="tape-cell"></div>
+	  <div class="tape-cell"></div>
+	  <div class="tape-cell"></div>
+	  <div class="tape-cell"></div>
+	  <div class="tape-cell"></div>
+	  <div class="tape-cell"></div>
+	  <div class="tape-cell"></div>
+	  <div class="tape-cell"></div>
+	  <div class="tape-cell"></div>
+	  <div class="tape-cell"></div>
+	  <div class="tape-cell"></div>
+	  <div class="tape-cell"></div>
+	  <div class="tape-cell"></div>
+	  <div class="tape-cell"></div>
+	  <div id="middle" class="tape-cell"></div>
+	  <div class="tape-cell"></div>
+	  <div class="tape-cell"></div>
+	  <div class="tape-cell"></div>
+	  <div class="tape-cell"></div>
+	  <div class="tape-cell"></div>
+	  <div class="tape-cell"></div>
+	  <div class="tape-cell"></div>
+	  <div class="tape-cell"></div>
+	  <div class="tape-cell"></div>
+	  <div class="tape-cell"></div>
+	  <div class="tape-cell"></div>
+	  <div class="tape-cell"></div>
+	  <div class="tape-cell"></div>
+	  <div class="tape-cell"></div>
+	  <div class="tape-cell"></div>
+	  <div class="tape-cell"></div>
+	  <div class="tape-cell"></div>
+	</div>
+	<div class="controls">
+	  <button id="play2">play2</button>
+	  <button id="play">></button>
+	  <button id="resume">resume</button>
+	  <button id="stop">stop</button>
+	  <button id="install2">install2</button>
+	  <button id="install">install</button>
+	  <button id="clear">clear</button>
+	  <button id="step">step</button>
+	  <button id="stepBack">stepback</button>
+	  <button id="sound">mute</button>
+	  <select id="speed">
+	    <option value="1000">very slow</option>
+	    <option value="500" selected="selected">slow</option>
+	    <option value="250">medium</option>
+	    <option value="150">medium fast</option>
+	    <option value="100">fast</option>
+	    <option value="50">very fast</option>
+	    <option value="0">compute</option>
+	  </select>
+	</div>
+	<div class="io">
+		<textarea id="input" class="input"></textarea>
+		<textarea id="message-box" class="output" readonly></textarea>	
+	</div>
+	<textarea id="tape-input" class="tape-input"></textarea>
+	<textarea id="startState"></textarea>
+
+	<audio id="rebota" controls="">
+		<source src="rebota.opus" type="audio/ogg" codecs="opus">
+	</audio>
+
+	<script src="g2.js"></script>
+  <script src="TM.js"></script>
+  <script src="grid.js"></script>
+  <script src="test.js"></script>
+</body>
+</html>

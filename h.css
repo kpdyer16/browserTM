@@ -1,0 +1,153 @@
+body {
+  display: grid;
+	min-height: 100vh;
+	margin: 0;
+	background-color: lightblue;
+	grid-column-gap: 15px;
+	grid-row-gap: 10px;
+	grid-template-rows: 100px 28px 28px 28px 6fr 1fr;
+	grid-template-columns: 60px 1fr 30px 1fr 20px 1fr 1fr 60px; /* 8 columns */
+	grid-template-areas: 
+		". header header header header header header ."
+		". tape tape tape tape tape tape ."
+		". controls controls controls controls controls controls ."
+		". tape-input tape-input tape-input startState startState . ."
+		". io io io io io io ."
+		". . . . . . . ."
+}
+
+.io {
+	display: grid;
+	grid-area: io;
+	grid-template-rows: auto;
+	grid-template-columns: auto auto;
+	grid-template-areas: 
+		"input output"
+}
+
+#startState {
+	grid-area: startState;
+}
+
+.header {
+  grid-area: header;
+  text-align: center;
+}
+
+.title {
+	font-size: 2em;
+	font-style: normal;
+	font-weight: normal;
+	margin: 10px;
+
+}
+
+
+.tape {
+  grid-area: tape;
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: lightgrey;
+  justify-content: center;
+  align-items: center;
+}
+
+.tape-cell {
+  background-color: #f1f1f1;
+  width: 20px;
+  height: 20px;
+  border: 2px solid lightgrey;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  text-align: center;
+  line-height: 21px;
+  font-size: 20px;
+}
+
+#middle {
+  border: 2px solid red;
+  background-color: #f1f1f1;
+  width: 20px;
+  height: 20px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  text-align: center;
+  line-height: 21px;
+  font-size: 20px;
+}
+
+.controls {
+  grid-area: controls;
+  display: flex;
+  justify-content: center;
+}
+
+#tape-input {
+  grid-area: tape-input;
+  resize: none;
+}
+
+.input {
+  grid-area: input;
+  background-color: #fffff0;
+  font-size: 1em;
+  border-left: 0;
+}
+
+.output {
+  grid-area: output;
+  background-color: #aabbe0;
+  cursor: default;
+}
+
+textarea {
+  resize: none;
+  border-radius: 2%;
+}
+
+audio {
+	display: none;
+}
+
+
+
+/*body {
+	display: grid;
+	min-height: 100vh;
+	margin: 0;
+	background-color: lightblue;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-columns: 20px 1fr 1fr 20px;
+	grid-template-areas: 
+		". header header ."
+		". tape tape ."
+		". tape-input controls ."
+		". input output ."
+		". input output ."
+}
+
+.tape {
+	grid-area: tape;
+	background-color: #7fffd4;
+}
+
+.header {
+	grid-area: header;
+}
+
+.controls {
+	grid-area: controls;
+}
+
+.tape-input {
+	grid-area: tape-input;
+}
+
+.input {
+	grid-area: input;
+	background-color: black;
+}
+
+.output {
+	grid-area: output;
+}*/
