@@ -1,5 +1,5 @@
 Browser TM™<sup>™</sup><sup><sup>™</sup></sup>
-Note: not actually trademarked
+(not actually trademarked)
 
 It's a toy implementation of a Turing Machine.. in a web browser, vanilla HTML, CSS, and JS
 This adds portability, it can be downloaded and run offline, and it's bare-bones, no bloat.
